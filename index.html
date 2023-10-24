@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Introducción JS</h1>
+    <button id="btn-color">Cambiar color titulo</button>
+    <script>
+        // DOM = Document object model
+        let count = 0;
+        let btnColor = document.getElementById('btn-color');
+        btnColor.addEventListener('click',  function() {
+            let titulo = document.getElementById('titulo');
+            count++;
+            if(count%2 == 1) {
+                titulo.style.color = 'red';
+            } else {
+                titulo.style.color = 'black';
+            }
+        })
+    </script>
+</body>
+</html>
