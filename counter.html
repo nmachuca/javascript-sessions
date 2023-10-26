@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton-restar">-</button> 
+    <p id="contador"></p>
+    <button id="boton-sumar">+</button>
+    <script>
+        let contador = 1;
+        let objetoContador = document.getElementById('contador');
+        objetoContador.innerHTML = contador;
+
+        let objetoBotonSumar = document.getElementById('boton-sumar');
+        objetoBotonSumar.addEventListener('click', function() {
+            contador++;
+            objetoContador.innerHTML = contador;
+        });
+
+        let objetoBotonRestar = document.getElementById('boton-restar');
+        objetoBotonRestar.addEventListener('click', function() {
+            contador--;
+            objetoContador.innerHTML = contador;
+        });
+    </script>
+</body>
+</html>
